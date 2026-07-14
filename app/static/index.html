@@ -4,37 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #131313;
+            --surface: #1d1d1d;
+            --surface-2: #262626;
+            --border: #3a3a3a;
+            --text: #f2f2f2;
+            --text-muted: #9a9a9a;
+            --accent-1: #ec4899;
+            --accent-2: #f97316;
+            --accent: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            --radius-lg: 18px;
+            --radius-md: 10px;
+        }
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Inter', system-ui, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            padding: 40px 20px;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 25% 20%, rgba(236, 72, 153, 0.12), transparent 45%),
+                radial-gradient(circle at 80% 80%, rgba(249, 115, 22, 0.10), transparent 45%),
+                var(--bg);
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 20px;
+            border-radius: var(--radius-lg);
+            padding: 36px 32px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: var(--surface);
+        }
+        .frame {
+            max-width: 420px;
+            margin: 40px auto;
+            background: var(--accent);
+            border-radius: var(--radius-lg);
+            padding: 3px;
+            box-shadow: 0 25px 60px -20px rgba(236, 72, 153, 0.35);
         }
         h1 {
-            color: #333;
+            background: linear-gradient(135deg, #ec4899, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
         form {
             margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
         input {
-            padding: 10px;
-            margin: 5px 0;
-            width: 80%;
-            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            margin: 0;
+            font-size: 15px;
+            background-color: var(--surface-2);
+            color: var(--text);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+        input:focus {
+            outline: none;
+            border-color: var(--accent-1);
+            box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.15);
         }
         button {
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
+            padding: 12px 20px;
+            margin: 6px 0 0;
+            font-size: 15px;
+            font-weight: 600;
             cursor: pointer;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 20px -8px rgba(236, 72, 153, 0.5);
         }
         .section {
             margin-bottom: 30px;
@@ -42,6 +102,7 @@
     </style>
 </head>
 <body>
+    <div class="frame">
     <div class="container" id="login-screen">
         <h1>User Management</h1>
         <div class="section" id="login-section">
@@ -77,6 +138,7 @@
             <h2>Delete Account</h2>
             <button type="button" onclick="deleteUser()">Delete Account</button>
         </div>
+    </div>
     </div>
 
     <script>
