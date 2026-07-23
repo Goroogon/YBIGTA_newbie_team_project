@@ -2,7 +2,7 @@
 
 ## 데이터 소개
 
-### 메가박스 (예린)
+### 메가박스 (나예린)
 
 - **사이트 링크**: https://www.megabox.co.kr/movie-detail/comment?rpstMovieNo=25104500
 - **데이터 형식**: `rating`(별점, 10점 만점), `date`(작성일, YYYY-MM-DD), `content`(리뷰 내용)

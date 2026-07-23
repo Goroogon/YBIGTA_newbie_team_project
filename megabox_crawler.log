@@ -1,0 +1,639 @@
+2026-07-23 21:58:43,129 - DEBUG - Selenium Manager binary found at: C:\Users\erin3\anaconda3\envs\ybigta\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2026-07-23 21:58:43,129 - DEBUG - Executing process: C:\Users\erin3\anaconda3\envs\ybigta\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --debug --language-binding python --output json
+2026-07-23 21:58:43,600 - DEBUG - msedgedriver not found in PATH
+2026-07-23 21:58:43,600 - DEBUG - MicrosoftEdge detected at C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+2026-07-23 21:58:43,600 - DEBUG - Detected browser: MicrosoftEdge 150.0.4078.83
+2026-07-23 21:58:43,600 - DEBUG - Required driver: msedgedriver 150.0.4078.83
+2026-07-23 21:58:43,600 - DEBUG - msedgedriver 150.0.4078.83 already in the cache
+2026-07-23 21:58:43,600 - DEBUG - Driver path: C:\Users\erin3\.cache\selenium\msedgedriver\win64\150.0.4078.83\msedgedriver.exe
+2026-07-23 21:58:43,601 - DEBUG - Browser path: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+2026-07-23 21:58:43,622 - DEBUG - Started executable: `C:\Users\erin3\.cache\selenium\msedgedriver\win64\150.0.4078.83\msedgedriver.exe` in a child process with pid: 42580 using 0 to output -3
+2026-07-23 21:58:43,714 - DEBUG - POST http://localhost:54721/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'MicrosoftEdge', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'ms:edgeOptions': {'detach': True, 'excludeSwitches': ['enable-logging'], 'extensions': [], 'binary': 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe', 'args': []}}}}
+2026-07-23 21:58:43,715 - DEBUG - Starting new HTTP connection (1): localhost:54721
+2026-07-23 21:58:44,662 - DEBUG - http://localhost:54721 "POST /session HTTP/1.1" 200 0
+2026-07-23 21:58:44,662 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"MicrosoftEdge","browserVersion":"150.0.4078.83","fedcm:accounts":true,"goog:processID":42868,"ms:edgeOptions":{"debuggerAddress":"localhost:54724"},"msedge":{"msedgedriverVersion":"150.0.4078.83 (7f302606e52ab615d52e1a0ab89ca415c8c843a3)","userDataDir":"C:\\Users\\erin3\\AppData\\Local\\Temp\\scoped_dir42580_1910564295"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"5d0c0c87205e25dd8c46d879a37ce429"}} | headers=HTTPHeaderDict({'Content-Length': '877', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:58:44,663 - DEBUG - Finished Request
+2026-07-23 21:58:44,663 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/url {'url': 'https://www.megabox.co.kr/movie-detail/comment?rpstMovieNo=25104500'}
+2026-07-23 21:58:57,617 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/url HTTP/1.1" 200 0
+2026-07-23 21:58:57,618 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:58:57,618 - DEBUG - Finished Request
+2026-07-23 21:58:57,618 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/window/maximize {}
+2026-07-23 21:58:57,665 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/window/maximize HTTP/1.1" 200 0
+2026-07-23 21:58:57,665 - DEBUG - Remote response: status=200 | data={"value":{"height":866,"width":1454,"x":-7,"y":-7}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:58:57,666 - DEBUG - Finished Request
+2026-07-23 21:58:57,666 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/timeouts {'implicit': 2000}
+2026-07-23 21:58:57,669 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/timeouts HTTP/1.1" 200 0
+2026-07-23 21:58:57,669 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:58:57,670 - DEBUG - Finished Request
+2026-07-23 21:58:57,670 - INFO - 브라우저 실행 및 접속 완료: https://www.megabox.co.kr/movie-detail/comment?rpstMovieNo=25104500
+2026-07-23 21:58:57,671 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:58:57,740 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:58:57,807 - DEBUG - Finished Request
+2026-07-23 21:58:57,997 - INFO - 1페이지 완료 - 누적 리뷰 수: 10
+2026-07-23 21:58:57,998 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='2']"}
+2026-07-23 21:58:58,034 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:58:58,035 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.325"}} | headers=HTTPHeaderDict({'Content-Length': '127', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:58:58,035 - DEBUG - Finished Request
+2026-07-23 21:58:58,035 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.325/click {}
+2026-07-23 21:58:58,216 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.325/click HTTP/1.1" 200 0
+2026-07-23 21:58:58,216 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:58:58,216 - DEBUG - Finished Request
+2026-07-23 21:59:02,027 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:02,130 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:02,185 - DEBUG - Finished Request
+2026-07-23 21:59:02,326 - INFO - 2페이지 완료 - 누적 리뷰 수: 20
+2026-07-23 21:59:02,327 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='3']"}
+2026-07-23 21:59:02,348 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:02,349 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.1472"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:02,349 - DEBUG - Finished Request
+2026-07-23 21:59:02,351 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.1472/click {}
+2026-07-23 21:59:02,486 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.1472/click HTTP/1.1" 200 0
+2026-07-23 21:59:02,486 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:02,486 - DEBUG - Finished Request
+2026-07-23 21:59:05,660 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:05,699 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:05,770 - DEBUG - Finished Request
+2026-07-23 21:59:06,032 - INFO - 3페이지 완료 - 누적 리뷰 수: 30
+2026-07-23 21:59:06,032 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='4']"}
+2026-07-23 21:59:06,049 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:06,050 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.4979"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:06,050 - DEBUG - Finished Request
+2026-07-23 21:59:06,050 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.4979/click {}
+2026-07-23 21:59:06,165 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.4979/click HTTP/1.1" 200 0
+2026-07-23 21:59:06,166 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:06,166 - DEBUG - Finished Request
+2026-07-23 21:59:09,179 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:09,230 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:09,337 - DEBUG - Finished Request
+2026-07-23 21:59:09,497 - INFO - 4페이지 완료 - 누적 리뷰 수: 40
+2026-07-23 21:59:09,498 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='5']"}
+2026-07-23 21:59:09,535 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:09,535 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.6071"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:09,535 - DEBUG - Finished Request
+2026-07-23 21:59:09,535 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.6071/click {}
+2026-07-23 21:59:09,647 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.6071/click HTTP/1.1" 200 0
+2026-07-23 21:59:09,647 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:09,648 - DEBUG - Finished Request
+2026-07-23 21:59:12,734 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:12,794 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:12,883 - DEBUG - Finished Request
+2026-07-23 21:59:13,139 - INFO - 5페이지 완료 - 누적 리뷰 수: 50
+2026-07-23 21:59:13,140 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='6']"}
+2026-07-23 21:59:13,167 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:13,168 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.7123"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:13,168 - DEBUG - Finished Request
+2026-07-23 21:59:13,168 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.7123/click {}
+2026-07-23 21:59:13,292 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.7123/click HTTP/1.1" 200 0
+2026-07-23 21:59:13,292 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:13,293 - DEBUG - Finished Request
+2026-07-23 21:59:15,769 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:15,806 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:15,876 - DEBUG - Finished Request
+2026-07-23 21:59:16,013 - INFO - 6페이지 완료 - 누적 리뷰 수: 60
+2026-07-23 21:59:16,014 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='7']"}
+2026-07-23 21:59:16,060 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:16,061 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.8157"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:16,061 - DEBUG - Finished Request
+2026-07-23 21:59:16,061 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.8157/click {}
+2026-07-23 21:59:16,163 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.8157/click HTTP/1.1" 200 0
+2026-07-23 21:59:16,173 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:16,173 - DEBUG - Finished Request
+2026-07-23 21:59:19,366 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:19,438 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:19,642 - DEBUG - Finished Request
+2026-07-23 21:59:19,779 - INFO - 7페이지 완료 - 누적 리뷰 수: 70
+2026-07-23 21:59:19,780 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='8']"}
+2026-07-23 21:59:19,818 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:19,818 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.9223"}} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:19,818 - DEBUG - Finished Request
+2026-07-23 21:59:19,818 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.9223/click {}
+2026-07-23 21:59:19,966 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.9223/click HTTP/1.1" 200 0
+2026-07-23 21:59:19,966 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:19,967 - DEBUG - Finished Request
+2026-07-23 21:59:22,138 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:22,180 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:22,268 - DEBUG - Finished Request
+2026-07-23 21:59:22,409 - INFO - 8페이지 완료 - 누적 리뷰 수: 80
+2026-07-23 21:59:22,410 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='9']"}
+2026-07-23 21:59:22,431 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:22,431 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.10238"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:22,431 - DEBUG - Finished Request
+2026-07-23 21:59:22,431 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.10238/click {}
+2026-07-23 21:59:22,528 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.10238/click HTTP/1.1" 200 0
+2026-07-23 21:59:22,529 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:22,529 - DEBUG - Finished Request
+2026-07-23 21:59:25,190 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:25,238 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:25,563 - DEBUG - Finished Request
+2026-07-23 21:59:25,680 - INFO - 9페이지 완료 - 누적 리뷰 수: 90
+2026-07-23 21:59:25,680 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='10']"}
+2026-07-23 21:59:25,702 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:25,702 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.11264"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:25,703 - DEBUG - Finished Request
+2026-07-23 21:59:25,703 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.11264/click {}
+2026-07-23 21:59:25,814 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.11264/click HTTP/1.1" 200 0
+2026-07-23 21:59:25,814 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:25,814 - DEBUG - Finished Request
+2026-07-23 21:59:28,724 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:28,771 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:28,858 - DEBUG - Finished Request
+2026-07-23 21:59:29,106 - INFO - 10페이지 완료 - 누적 리뷰 수: 100
+2026-07-23 21:59:29,107 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='11']"}
+2026-07-23 21:59:29,123 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:29,124 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.12286"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:29,124 - DEBUG - Finished Request
+2026-07-23 21:59:29,124 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.12286/click {}
+2026-07-23 21:59:29,225 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.12286/click HTTP/1.1" 200 0
+2026-07-23 21:59:29,226 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:29,226 - DEBUG - Finished Request
+2026-07-23 21:59:31,761 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:31,799 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:31,822 - DEBUG - Finished Request
+2026-07-23 21:59:31,956 - INFO - 11페이지 완료 - 누적 리뷰 수: 110
+2026-07-23 21:59:31,957 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='12']"}
+2026-07-23 21:59:32,493 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:32,493 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.13324"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:32,493 - DEBUG - Finished Request
+2026-07-23 21:59:32,494 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.13324/click {}
+2026-07-23 21:59:32,637 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.13324/click HTTP/1.1" 200 0
+2026-07-23 21:59:32,638 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:32,638 - DEBUG - Finished Request
+2026-07-23 21:59:35,870 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:35,915 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:35,997 - DEBUG - Finished Request
+2026-07-23 21:59:36,278 - INFO - 12페이지 완료 - 누적 리뷰 수: 120
+2026-07-23 21:59:36,279 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='13']"}
+2026-07-23 21:59:36,295 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:36,295 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.14372"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:36,295 - DEBUG - Finished Request
+2026-07-23 21:59:36,295 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.14372/click {}
+2026-07-23 21:59:36,413 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.14372/click HTTP/1.1" 200 0
+2026-07-23 21:59:36,413 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:36,413 - DEBUG - Finished Request
+2026-07-23 21:59:38,575 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:38,611 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:38,749 - DEBUG - Finished Request
+2026-07-23 21:59:39,012 - INFO - 13페이지 완료 - 누적 리뷰 수: 130
+2026-07-23 21:59:39,013 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='14']"}
+2026-07-23 21:59:39,029 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:39,029 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.15422"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:39,029 - DEBUG - Finished Request
+2026-07-23 21:59:39,029 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.15422/click {}
+2026-07-23 21:59:39,126 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.15422/click HTTP/1.1" 200 0
+2026-07-23 21:59:39,126 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:39,126 - DEBUG - Finished Request
+2026-07-23 21:59:41,672 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:41,712 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:41,845 - DEBUG - Finished Request
+2026-07-23 21:59:42,015 - INFO - 14페이지 완료 - 누적 리뷰 수: 140
+2026-07-23 21:59:42,016 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='15']"}
+2026-07-23 21:59:42,048 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:42,048 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.16452"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:42,049 - DEBUG - Finished Request
+2026-07-23 21:59:42,049 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.16452/click {}
+2026-07-23 21:59:42,166 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.16452/click HTTP/1.1" 200 0
+2026-07-23 21:59:42,166 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:42,167 - DEBUG - Finished Request
+2026-07-23 21:59:45,855 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:45,935 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:45,970 - DEBUG - Finished Request
+2026-07-23 21:59:46,256 - INFO - 15페이지 완료 - 누적 리뷰 수: 150
+2026-07-23 21:59:46,257 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='16']"}
+2026-07-23 21:59:46,274 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:46,275 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.17488"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:46,275 - DEBUG - Finished Request
+2026-07-23 21:59:46,275 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.17488/click {}
+2026-07-23 21:59:46,411 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.17488/click HTTP/1.1" 200 0
+2026-07-23 21:59:46,412 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:46,412 - DEBUG - Finished Request
+2026-07-23 21:59:49,321 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:49,357 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:49,393 - DEBUG - Finished Request
+2026-07-23 21:59:49,515 - INFO - 16페이지 완료 - 누적 리뷰 수: 160
+2026-07-23 21:59:49,516 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='17']"}
+2026-07-23 21:59:49,533 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:49,533 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.18519"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:49,533 - DEBUG - Finished Request
+2026-07-23 21:59:49,534 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.18519/click {}
+2026-07-23 21:59:49,626 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.18519/click HTTP/1.1" 200 0
+2026-07-23 21:59:49,626 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:49,627 - DEBUG - Finished Request
+2026-07-23 21:59:51,932 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:51,970 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:52,046 - DEBUG - Finished Request
+2026-07-23 21:59:52,294 - INFO - 17페이지 완료 - 누적 리뷰 수: 170
+2026-07-23 21:59:52,295 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='18']"}
+2026-07-23 21:59:52,331 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:52,332 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.19558"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:52,332 - DEBUG - Finished Request
+2026-07-23 21:59:52,332 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.19558/click {}
+2026-07-23 21:59:52,472 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.19558/click HTTP/1.1" 200 0
+2026-07-23 21:59:52,473 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:52,474 - DEBUG - Finished Request
+2026-07-23 21:59:56,040 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:56,076 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:56,143 - DEBUG - Finished Request
+2026-07-23 21:59:56,301 - INFO - 18페이지 완료 - 누적 리뷰 수: 180
+2026-07-23 21:59:56,301 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='19']"}
+2026-07-23 21:59:56,335 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:56,336 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.20576"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:56,336 - DEBUG - Finished Request
+2026-07-23 21:59:56,336 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.20576/click {}
+2026-07-23 21:59:56,435 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.20576/click HTTP/1.1" 200 0
+2026-07-23 21:59:56,435 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:56,435 - DEBUG - Finished Request
+2026-07-23 21:59:58,536 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 21:59:58,595 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 21:59:58,656 - DEBUG - Finished Request
+2026-07-23 21:59:58,902 - INFO - 19페이지 완료 - 누적 리뷰 수: 190
+2026-07-23 21:59:58,903 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='20']"}
+2026-07-23 21:59:58,921 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 21:59:58,921 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.21612"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:58,922 - DEBUG - Finished Request
+2026-07-23 21:59:58,922 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.21612/click {}
+2026-07-23 21:59:59,031 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.21612/click HTTP/1.1" 200 0
+2026-07-23 21:59:59,032 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 21:59:59,032 - DEBUG - Finished Request
+2026-07-23 22:00:02,652 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:02,692 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:02,763 - DEBUG - Finished Request
+2026-07-23 22:00:02,891 - INFO - 20페이지 완료 - 누적 리뷰 수: 200
+2026-07-23 22:00:02,892 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='21']"}
+2026-07-23 22:00:02,928 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:02,929 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.22638"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:02,929 - DEBUG - Finished Request
+2026-07-23 22:00:02,929 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.22638/click {}
+2026-07-23 22:00:03,094 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.22638/click HTTP/1.1" 200 0
+2026-07-23 22:00:03,094 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:03,094 - DEBUG - Finished Request
+2026-07-23 22:00:06,303 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:06,342 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:06,651 - DEBUG - Finished Request
+2026-07-23 22:00:06,802 - INFO - 21페이지 완료 - 누적 리뷰 수: 210
+2026-07-23 22:00:06,803 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='22']"}
+2026-07-23 22:00:06,820 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:06,820 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.23678"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:06,820 - DEBUG - Finished Request
+2026-07-23 22:00:06,821 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.23678/click {}
+2026-07-23 22:00:06,937 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.23678/click HTTP/1.1" 200 0
+2026-07-23 22:00:06,938 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:06,938 - DEBUG - Finished Request
+2026-07-23 22:00:09,106 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:09,147 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:09,231 - DEBUG - Finished Request
+2026-07-23 22:00:09,364 - INFO - 22페이지 완료 - 누적 리뷰 수: 220
+2026-07-23 22:00:09,365 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='23']"}
+2026-07-23 22:00:09,401 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:09,402 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.24736"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:09,402 - DEBUG - Finished Request
+2026-07-23 22:00:09,402 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.24736/click {}
+2026-07-23 22:00:09,506 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.24736/click HTTP/1.1" 200 0
+2026-07-23 22:00:09,507 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:09,508 - DEBUG - Finished Request
+2026-07-23 22:00:12,910 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:12,952 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:13,035 - DEBUG - Finished Request
+2026-07-23 22:00:13,315 - INFO - 23페이지 완료 - 누적 리뷰 수: 230
+2026-07-23 22:00:13,316 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='24']"}
+2026-07-23 22:00:13,333 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:13,333 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.25784"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:13,333 - DEBUG - Finished Request
+2026-07-23 22:00:13,334 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.25784/click {}
+2026-07-23 22:00:13,428 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.25784/click HTTP/1.1" 200 0
+2026-07-23 22:00:13,429 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:13,429 - DEBUG - Finished Request
+2026-07-23 22:00:15,657 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:15,695 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:15,743 - DEBUG - Finished Request
+2026-07-23 22:00:15,915 - INFO - 24페이지 완료 - 누적 리뷰 수: 240
+2026-07-23 22:00:15,916 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='25']"}
+2026-07-23 22:00:15,949 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:15,949 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.26832"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:15,949 - DEBUG - Finished Request
+2026-07-23 22:00:15,950 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.26832/click {}
+2026-07-23 22:00:16,068 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.26832/click HTTP/1.1" 200 0
+2026-07-23 22:00:16,068 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:16,068 - DEBUG - Finished Request
+2026-07-23 22:00:20,016 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:20,055 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:20,292 - DEBUG - Finished Request
+2026-07-23 22:00:20,433 - INFO - 25페이지 완료 - 누적 리뷰 수: 250
+2026-07-23 22:00:20,434 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='26']"}
+2026-07-23 22:00:20,463 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:20,463 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.27886"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:20,463 - DEBUG - Finished Request
+2026-07-23 22:00:20,463 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.27886/click {}
+2026-07-23 22:00:20,566 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.27886/click HTTP/1.1" 200 0
+2026-07-23 22:00:20,566 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:20,567 - DEBUG - Finished Request
+2026-07-23 22:00:23,858 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:23,932 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:23,965 - DEBUG - Finished Request
+2026-07-23 22:00:24,207 - INFO - 26페이지 완료 - 누적 리뷰 수: 260
+2026-07-23 22:00:24,208 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='27']"}
+2026-07-23 22:00:24,249 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:24,249 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.28932"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:24,249 - DEBUG - Finished Request
+2026-07-23 22:00:24,249 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.28932/click {}
+2026-07-23 22:00:24,361 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.28932/click HTTP/1.1" 200 0
+2026-07-23 22:00:24,361 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:24,362 - DEBUG - Finished Request
+2026-07-23 22:00:27,715 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:27,782 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:27,964 - DEBUG - Finished Request
+2026-07-23 22:00:28,163 - INFO - 27페이지 완료 - 누적 리뷰 수: 270
+2026-07-23 22:00:28,163 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='28']"}
+2026-07-23 22:00:28,182 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:28,183 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.29984"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:28,183 - DEBUG - Finished Request
+2026-07-23 22:00:28,183 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.29984/click {}
+2026-07-23 22:00:28,327 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.29984/click HTTP/1.1" 200 0
+2026-07-23 22:00:28,328 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:28,328 - DEBUG - Finished Request
+2026-07-23 22:00:30,767 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:30,808 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:30,896 - DEBUG - Finished Request
+2026-07-23 22:00:31,170 - INFO - 28페이지 완료 - 누적 리뷰 수: 280
+2026-07-23 22:00:31,171 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='29']"}
+2026-07-23 22:00:31,190 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:31,190 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.31012"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:31,191 - DEBUG - Finished Request
+2026-07-23 22:00:31,191 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.31012/click {}
+2026-07-23 22:00:31,333 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.31012/click HTTP/1.1" 200 0
+2026-07-23 22:00:31,333 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:31,334 - DEBUG - Finished Request
+2026-07-23 22:00:34,586 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:34,649 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:34,764 - DEBUG - Finished Request
+2026-07-23 22:00:34,898 - INFO - 29페이지 완료 - 누적 리뷰 수: 290
+2026-07-23 22:00:34,899 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='30']"}
+2026-07-23 22:00:34,917 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:34,918 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.32050"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:34,918 - DEBUG - Finished Request
+2026-07-23 22:00:34,918 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.32050/click {}
+2026-07-23 22:00:35,062 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.32050/click HTTP/1.1" 200 0
+2026-07-23 22:00:35,063 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:35,063 - DEBUG - Finished Request
+2026-07-23 22:00:38,310 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:38,361 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:38,641 - DEBUG - Finished Request
+2026-07-23 22:00:38,794 - INFO - 30페이지 완료 - 누적 리뷰 수: 300
+2026-07-23 22:00:38,795 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='31']"}
+2026-07-23 22:00:38,827 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:38,827 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.33116"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:38,828 - DEBUG - Finished Request
+2026-07-23 22:00:38,828 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.33116/click {}
+2026-07-23 22:00:38,949 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.33116/click HTTP/1.1" 200 0
+2026-07-23 22:00:38,949 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:38,950 - DEBUG - Finished Request
+2026-07-23 22:00:41,470 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:41,515 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:41,604 - DEBUG - Finished Request
+2026-07-23 22:00:41,848 - INFO - 31페이지 완료 - 누적 리뷰 수: 310
+2026-07-23 22:00:41,849 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='32']"}
+2026-07-23 22:00:41,878 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:41,878 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.34150"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:41,878 - DEBUG - Finished Request
+2026-07-23 22:00:41,878 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.34150/click {}
+2026-07-23 22:00:41,969 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.34150/click HTTP/1.1" 200 0
+2026-07-23 22:00:41,969 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:41,969 - DEBUG - Finished Request
+2026-07-23 22:00:44,193 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:44,218 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:44,280 - DEBUG - Finished Request
+2026-07-23 22:00:44,450 - INFO - 32페이지 완료 - 누적 리뷰 수: 320
+2026-07-23 22:00:44,451 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='33']"}
+2026-07-23 22:00:44,469 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:44,470 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.35220"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:44,470 - DEBUG - Finished Request
+2026-07-23 22:00:44,470 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.35220/click {}
+2026-07-23 22:00:44,561 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.35220/click HTTP/1.1" 200 0
+2026-07-23 22:00:44,562 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:44,562 - DEBUG - Finished Request
+2026-07-23 22:00:47,823 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:47,865 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:47,910 - DEBUG - Finished Request
+2026-07-23 22:00:48,166 - INFO - 33페이지 완료 - 누적 리뷰 수: 330
+2026-07-23 22:00:48,167 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='34']"}
+2026-07-23 22:00:48,191 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:48,192 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.36238"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:48,192 - DEBUG - Finished Request
+2026-07-23 22:00:48,192 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.36238/click {}
+2026-07-23 22:00:48,342 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.36238/click HTTP/1.1" 200 0
+2026-07-23 22:00:48,342 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:48,343 - DEBUG - Finished Request
+2026-07-23 22:00:50,630 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:50,670 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:50,757 - DEBUG - Finished Request
+2026-07-23 22:00:50,900 - INFO - 34페이지 완료 - 누적 리뷰 수: 340
+2026-07-23 22:00:50,901 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='35']"}
+2026-07-23 22:00:50,917 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:50,917 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.37262"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:50,918 - DEBUG - Finished Request
+2026-07-23 22:00:50,918 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.37262/click {}
+2026-07-23 22:00:51,007 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.37262/click HTTP/1.1" 200 0
+2026-07-23 22:00:51,008 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:51,008 - DEBUG - Finished Request
+2026-07-23 22:00:53,487 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:53,549 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:53,636 - DEBUG - Finished Request
+2026-07-23 22:00:53,982 - INFO - 35페이지 완료 - 누적 리뷰 수: 350
+2026-07-23 22:00:53,983 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='36']"}
+2026-07-23 22:00:54,002 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:54,002 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.38336"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:54,002 - DEBUG - Finished Request
+2026-07-23 22:00:54,003 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.38336/click {}
+2026-07-23 22:00:54,111 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.38336/click HTTP/1.1" 200 0
+2026-07-23 22:00:54,111 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:54,111 - DEBUG - Finished Request
+2026-07-23 22:00:56,308 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:56,380 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:56,461 - DEBUG - Finished Request
+2026-07-23 22:00:56,636 - INFO - 36페이지 완료 - 누적 리뷰 수: 360
+2026-07-23 22:00:56,637 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='37']"}
+2026-07-23 22:00:56,675 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:56,676 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.39392"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:56,676 - DEBUG - Finished Request
+2026-07-23 22:00:56,676 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.39392/click {}
+2026-07-23 22:00:56,804 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.39392/click HTTP/1.1" 200 0
+2026-07-23 22:00:56,805 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:56,806 - DEBUG - Finished Request
+2026-07-23 22:00:58,937 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:00:58,973 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:00:59,191 - DEBUG - Finished Request
+2026-07-23 22:00:59,308 - INFO - 37페이지 완료 - 누적 리뷰 수: 370
+2026-07-23 22:00:59,308 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='38']"}
+2026-07-23 22:00:59,341 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:00:59,341 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.40428"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:59,341 - DEBUG - Finished Request
+2026-07-23 22:00:59,341 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.40428/click {}
+2026-07-23 22:00:59,453 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.40428/click HTTP/1.1" 200 0
+2026-07-23 22:00:59,453 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:00:59,454 - DEBUG - Finished Request
+2026-07-23 22:01:03,211 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:03,252 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:03,355 - DEBUG - Finished Request
+2026-07-23 22:01:03,611 - INFO - 38페이지 완료 - 누적 리뷰 수: 380
+2026-07-23 22:01:03,612 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='39']"}
+2026-07-23 22:01:03,630 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:03,630 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.41480"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:03,631 - DEBUG - Finished Request
+2026-07-23 22:01:03,631 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.41480/click {}
+2026-07-23 22:01:03,767 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.41480/click HTTP/1.1" 200 0
+2026-07-23 22:01:03,768 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:03,768 - DEBUG - Finished Request
+2026-07-23 22:01:07,339 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:07,368 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:07,408 - DEBUG - Finished Request
+2026-07-23 22:01:07,540 - INFO - 39페이지 완료 - 누적 리뷰 수: 390
+2026-07-23 22:01:07,540 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='40']"}
+2026-07-23 22:01:07,558 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:07,559 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.42542"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:07,559 - DEBUG - Finished Request
+2026-07-23 22:01:07,559 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.42542/click {}
+2026-07-23 22:01:07,649 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.42542/click HTTP/1.1" 200 0
+2026-07-23 22:01:07,650 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:07,650 - DEBUG - Finished Request
+2026-07-23 22:01:11,481 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:11,519 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:11,586 - DEBUG - Finished Request
+2026-07-23 22:01:12,100 - INFO - 40페이지 완료 - 누적 리뷰 수: 400
+2026-07-23 22:01:12,101 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='41']"}
+2026-07-23 22:01:12,119 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:12,119 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.43606"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:12,120 - DEBUG - Finished Request
+2026-07-23 22:01:12,121 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.43606/click {}
+2026-07-23 22:01:12,232 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.43606/click HTTP/1.1" 200 0
+2026-07-23 22:01:12,232 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:12,232 - DEBUG - Finished Request
+2026-07-23 22:01:15,566 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:15,605 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:15,679 - DEBUG - Finished Request
+2026-07-23 22:01:15,922 - INFO - 41페이지 완료 - 누적 리뷰 수: 410
+2026-07-23 22:01:15,922 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='42']"}
+2026-07-23 22:01:15,940 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:15,940 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.44622"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:15,940 - DEBUG - Finished Request
+2026-07-23 22:01:15,941 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.44622/click {}
+2026-07-23 22:01:16,029 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.44622/click HTTP/1.1" 200 0
+2026-07-23 22:01:16,029 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:16,029 - DEBUG - Finished Request
+2026-07-23 22:01:19,039 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:19,100 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:19,169 - DEBUG - Finished Request
+2026-07-23 22:01:19,335 - INFO - 42페이지 완료 - 누적 리뷰 수: 420
+2026-07-23 22:01:19,336 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='43']"}
+2026-07-23 22:01:19,372 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:19,373 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.45672"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:19,373 - DEBUG - Finished Request
+2026-07-23 22:01:19,373 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.45672/click {}
+2026-07-23 22:01:19,469 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.45672/click HTTP/1.1" 200 0
+2026-07-23 22:01:19,470 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:19,470 - DEBUG - Finished Request
+2026-07-23 22:01:23,052 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:23,092 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:23,178 - DEBUG - Finished Request
+2026-07-23 22:01:23,434 - INFO - 43페이지 완료 - 누적 리뷰 수: 430
+2026-07-23 22:01:23,435 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='44']"}
+2026-07-23 22:01:23,452 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:23,452 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.46712"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:23,452 - DEBUG - Finished Request
+2026-07-23 22:01:23,453 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.46712/click {}
+2026-07-23 22:01:23,543 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.46712/click HTTP/1.1" 200 0
+2026-07-23 22:01:23,544 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:23,544 - DEBUG - Finished Request
+2026-07-23 22:01:25,794 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:25,833 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:25,870 - DEBUG - Finished Request
+2026-07-23 22:01:26,021 - INFO - 44페이지 완료 - 누적 리뷰 수: 440
+2026-07-23 22:01:26,022 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='45']"}
+2026-07-23 22:01:26,060 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:26,060 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.47760"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:26,061 - DEBUG - Finished Request
+2026-07-23 22:01:26,061 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.47760/click {}
+2026-07-23 22:01:26,244 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.47760/click HTTP/1.1" 200 0
+2026-07-23 22:01:26,246 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:26,246 - DEBUG - Finished Request
+2026-07-23 22:01:29,831 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:29,874 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:29,985 - DEBUG - Finished Request
+2026-07-23 22:01:30,156 - INFO - 45페이지 완료 - 누적 리뷰 수: 450
+2026-07-23 22:01:30,157 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='46']"}
+2026-07-23 22:01:30,175 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:30,175 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.48812"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:30,175 - DEBUG - Finished Request
+2026-07-23 22:01:30,175 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.48812/click {}
+2026-07-23 22:01:30,311 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.48812/click HTTP/1.1" 200 0
+2026-07-23 22:01:30,311 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:30,311 - DEBUG - Finished Request
+2026-07-23 22:01:34,211 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:34,251 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:34,309 - DEBUG - Finished Request
+2026-07-23 22:01:34,558 - INFO - 46페이지 완료 - 누적 리뷰 수: 460
+2026-07-23 22:01:34,558 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='47']"}
+2026-07-23 22:01:34,582 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:34,582 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.49864"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:34,582 - DEBUG - Finished Request
+2026-07-23 22:01:34,583 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.49864/click {}
+2026-07-23 22:01:34,679 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.49864/click HTTP/1.1" 200 0
+2026-07-23 22:01:34,679 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:34,679 - DEBUG - Finished Request
+2026-07-23 22:01:36,684 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:36,726 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:36,789 - DEBUG - Finished Request
+2026-07-23 22:01:36,926 - INFO - 47페이지 완료 - 누적 리뷰 수: 470
+2026-07-23 22:01:36,927 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='48']"}
+2026-07-23 22:01:36,952 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:36,952 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.50916"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:36,952 - DEBUG - Finished Request
+2026-07-23 22:01:36,952 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.50916/click {}
+2026-07-23 22:01:37,099 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.50916/click HTTP/1.1" 200 0
+2026-07-23 22:01:37,099 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:37,100 - DEBUG - Finished Request
+2026-07-23 22:01:40,511 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:40,550 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:40,642 - DEBUG - Finished Request
+2026-07-23 22:01:40,936 - INFO - 48페이지 완료 - 누적 리뷰 수: 480
+2026-07-23 22:01:40,937 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='49']"}
+2026-07-23 22:01:40,969 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:40,969 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.51938"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:40,970 - DEBUG - Finished Request
+2026-07-23 22:01:40,970 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.51938/click {}
+2026-07-23 22:01:41,085 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.51938/click HTTP/1.1" 200 0
+2026-07-23 22:01:41,086 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:41,086 - DEBUG - Finished Request
+2026-07-23 22:01:44,874 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:44,927 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:44,960 - DEBUG - Finished Request
+2026-07-23 22:01:45,103 - INFO - 49페이지 완료 - 누적 리뷰 수: 490
+2026-07-23 22:01:45,103 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='50']"}
+2026-07-23 22:01:45,135 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:45,136 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.52980"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:45,136 - DEBUG - Finished Request
+2026-07-23 22:01:45,136 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.52980/click {}
+2026-07-23 22:01:45,222 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.52980/click HTTP/1.1" 200 0
+2026-07-23 22:01:45,222 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:45,222 - DEBUG - Finished Request
+2026-07-23 22:01:47,239 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:47,281 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:47,338 - DEBUG - Finished Request
+2026-07-23 22:01:47,602 - INFO - 50페이지 완료 - 누적 리뷰 수: 499
+2026-07-23 22:01:47,602 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element {'using': 'xpath', 'value': "//a[@pagenum='51']"}
+2026-07-23 22:01:47,619 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element HTTP/1.1" 200 0
+2026-07-23 22:01:47,620 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.54036"}} | headers=HTTPHeaderDict({'Content-Length': '129', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:47,620 - DEBUG - Finished Request
+2026-07-23 22:01:47,620 - DEBUG - POST http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.54036/click {}
+2026-07-23 22:01:47,716 - DEBUG - http://localhost:54721 "POST /session/5d0c0c87205e25dd8c46d879a37ce429/element/f.6D5B31D6BDDDA7F35DE904DB86C85E2A.d.F1492CCA55A850D5725F1D6B0168AF4B.e.54036/click HTTP/1.1" 200 0
+2026-07-23 22:01:47,716 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:47,717 - DEBUG - Finished Request
+2026-07-23 22:01:50,610 - DEBUG - GET http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429/source {}
+2026-07-23 22:01:50,653 - DEBUG - http://localhost:54721 "GET /session/5d0c0c87205e25dd8c46d879a37ce429/source HTTP/1.1" 200 0
+2026-07-23 22:01:50,742 - DEBUG - Finished Request
+2026-07-23 22:01:50,882 - INFO - 51페이지 완료 - 누적 리뷰 수: 509
+2026-07-23 22:01:50,883 - INFO - 목표 리뷰 수(500개) 도달, 수집을 종료합니다.
+2026-07-23 22:01:50,883 - INFO - 최종 파싱된 리뷰 수: 509
+2026-07-23 22:01:50,883 - DEBUG - DELETE http://localhost:54721/session/5d0c0c87205e25dd8c46d879a37ce429 {}
+2026-07-23 22:01:51,207 - DEBUG - http://localhost:54721 "DELETE /session/5d0c0c87205e25dd8c46d879a37ce429 HTTP/1.1" 200 0
+2026-07-23 22:01:51,207 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2026-07-23 22:01:51,207 - DEBUG - Finished Request
+2026-07-23 22:01:53,926 - INFO - CSV 저장 완료: database\reviews_megabox.csv (총 509개)
