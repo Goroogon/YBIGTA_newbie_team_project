@@ -1,0 +1,61 @@
+2026-07-24 14:26:12,128 - INFO - requests.Session 준비 완료 (HTML/GraphQL 요청용)
+2026-07-24 14:26:12,132 - DEBUG - Starting new HTTPS connection (1): m.kinolights.com:443
+2026-07-24 14:26:12,547 - DEBUG - https://m.kinolights.com:443 "GET /season/148606/reviews HTTP/1.1" 200 None
+2026-07-24 14:26:12,618 - ERROR - HTML에서 초기 리뷰 데이터를 찾지 못했습니다.
+2026-07-24 14:26:12,619 - INFO - 초기 페이지 파싱 완료 - 누적 리뷰 수: 0
+2026-07-24 14:26:12,620 - DEBUG - Starting new HTTPS connection (1): gateway.kinolights.com:443
+2026-07-24 14:26:12,966 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4047
+2026-07-24 14:26:12,967 - INFO - 전체 리뷰 개수: 527
+2026-07-24 14:26:12,967 - INFO - offset=0 완료 - 누적 리뷰 수: 19
+2026-07-24 14:26:14,504 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4374
+2026-07-24 14:26:14,505 - INFO - offset=20 완료 - 누적 리뷰 수: 37
+2026-07-24 14:26:15,183 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4553
+2026-07-24 14:26:15,184 - INFO - offset=40 완료 - 누적 리뷰 수: 57
+2026-07-24 14:26:15,911 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 9850
+2026-07-24 14:26:15,912 - INFO - offset=60 완료 - 누적 리뷰 수: 76
+2026-07-24 14:26:16,623 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 3610
+2026-07-24 14:26:16,624 - INFO - offset=80 완료 - 누적 리뷰 수: 96
+2026-07-24 14:26:18,072 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4378
+2026-07-24 14:26:18,074 - INFO - offset=100 완료 - 누적 리뷰 수: 116
+2026-07-24 14:26:18,683 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4392
+2026-07-24 14:26:18,684 - INFO - offset=120 완료 - 누적 리뷰 수: 135
+2026-07-24 14:26:19,805 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4251
+2026-07-24 14:26:19,806 - INFO - offset=140 완료 - 누적 리뷰 수: 155
+2026-07-24 14:26:20,921 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 19834
+2026-07-24 14:26:20,922 - INFO - offset=160 완료 - 누적 리뷰 수: 174
+2026-07-24 14:26:21,482 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4159
+2026-07-24 14:26:21,483 - INFO - offset=180 완료 - 누적 리뷰 수: 193
+2026-07-24 14:26:22,573 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4353
+2026-07-24 14:26:22,574 - INFO - offset=200 완료 - 누적 리뷰 수: 212
+2026-07-24 14:26:23,570 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 7595
+2026-07-24 14:26:23,571 - INFO - offset=220 완료 - 누적 리뷰 수: 232
+2026-07-24 14:26:24,793 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4399
+2026-07-24 14:26:24,794 - INFO - offset=240 완료 - 누적 리뷰 수: 252
+2026-07-24 14:26:26,166 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 12791
+2026-07-24 14:26:26,167 - INFO - offset=260 완료 - 누적 리뷰 수: 270
+2026-07-24 14:26:26,943 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 5176
+2026-07-24 14:26:26,944 - INFO - offset=280 완료 - 누적 리뷰 수: 289
+2026-07-24 14:26:28,351 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 7586
+2026-07-24 14:26:28,352 - INFO - offset=300 완료 - 누적 리뷰 수: 309
+2026-07-24 14:26:29,497 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 7685
+2026-07-24 14:26:29,498 - INFO - offset=320 완료 - 누적 리뷰 수: 329
+2026-07-24 14:26:30,785 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 6399
+2026-07-24 14:26:30,786 - INFO - offset=340 완료 - 누적 리뷰 수: 349
+2026-07-24 14:26:31,785 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 5724
+2026-07-24 14:26:31,786 - INFO - offset=360 완료 - 누적 리뷰 수: 368
+2026-07-24 14:26:32,552 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 8501
+2026-07-24 14:26:32,553 - INFO - offset=380 완료 - 누적 리뷰 수: 388
+2026-07-24 14:26:33,934 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4281
+2026-07-24 14:26:33,935 - INFO - offset=400 완료 - 누적 리뷰 수: 408
+2026-07-24 14:26:35,035 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 4521
+2026-07-24 14:26:35,036 - INFO - offset=420 완료 - 누적 리뷰 수: 426
+2026-07-24 14:26:35,825 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 8321
+2026-07-24 14:26:35,827 - INFO - offset=440 완료 - 누적 리뷰 수: 446
+2026-07-24 14:26:36,697 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 18344
+2026-07-24 14:26:36,698 - INFO - offset=460 완료 - 누적 리뷰 수: 466
+2026-07-24 14:26:37,548 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 7087
+2026-07-24 14:26:37,549 - INFO - offset=480 완료 - 누적 리뷰 수: 485
+2026-07-24 14:26:39,119 - DEBUG - https://gateway.kinolights.com:443 "POST /graphql HTTP/1.1" 200 7542
+2026-07-24 14:26:39,120 - INFO - offset=500 완료 - 누적 리뷰 수: 505
+2026-07-24 14:26:40,162 - INFO - 최종 파싱된 리뷰 수: 505
+2026-07-24 14:26:40,190 - INFO - CSV 저장 완료: database\reviews_kinolights.csv (총 505개)
