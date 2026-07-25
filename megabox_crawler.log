@@ -1,2 +1,0 @@
-2026-07-25 15:59:39,218 - DEBUG - Selenium Manager binary found at: C:\Users\tjrex\anaconda3\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
-2026-07-25 15:59:39,219 - DEBUG - Executing process: C:\Users\tjrex\anaconda3\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --debug --language-binding python --output json
