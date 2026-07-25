@@ -31,8 +31,7 @@
 ### 0. 필요한 패키지 설치
 
 ```bash
-<<<<<<< HEAD
-pip install beautifulsoup4 selenium pandas scikit-learn kiwipiepy
+pip install beautifulsoup4 selenium pandas scikit-learn kiwipiepy matplotlib
 ```
 
 ### 1. 전체 크롤러 한 번에 실행
@@ -68,6 +67,6 @@ python -m review_analysis.crawling.main -o {output_path} --crawler {크롤러 �
 
 ### 3. 실행 시 브라우저 창이 열립니다
 
-Selenium이 Edge 브라우저를 직접 실행하여 크롤링을 진행하므로,
+Selenium이 Edge, chrome 브라우저를 직접 실행하여 크롤링을 진행하므로,
 실행 중에는 브라우저 창을 닫지 말고 그대로 두어야 합니다.
 크롤링이 끝나면 브라우저가 자동으로 종료됩니다.

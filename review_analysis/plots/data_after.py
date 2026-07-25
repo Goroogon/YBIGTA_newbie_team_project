@@ -21,14 +21,14 @@ import pandas as pd
 STAGE = "preprocessed"  
 
 FILES = {
-    "kinolights": "database/reviews_kinolights.csv",
-    "megabox": "database/reviews_megabox.csv",
-    "naver": "database/reviews_naver.csv",
+    "kinolights": "database/preprocessed_reviews_kinolights.csv",
+    "megabox": "database/preprocessed_reviews_megabox.csv",
+    "naver": "database/preprocessed_reviews_naver.csv",
 }
 
 EXPECTED_MIN_ROWS = 500  # 과제 최소조건
 
-OUTPUT_DIR = "./check_outputs"
+OUTPUT_DIR = "review_analysis/plots"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 한글 폰트 설정

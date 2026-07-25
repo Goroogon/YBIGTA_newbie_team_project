@@ -57,9 +57,9 @@ class SiteProcessor(BaseDataProcessor):
             lambda x: x / 2 if pd.notna(x) and x > 5 else x
         )
 
-        # 스케일링 이후에도 1~5 범위를 벗어나는 값은 이상치로 간주하여 제거
+        # 스케일링 이후에도 0.5~5 범위를 벗어나는 값은 이상치로 간주하여 제거
         # (예: 원본이 10점을 초과하는 경우 -> 스케일링 후에도 5점 초과)
-        self.df = self.df[(self.df['rating'] >= 1) & (self.df['rating'] <= 5)]
+        self.df = self.df[(self.df['rating'] >= 0.5) & (self.df['rating'] <= 5)]
 
         # ==========================================
         # [3] 날짜 형식 전처리 (Dates)

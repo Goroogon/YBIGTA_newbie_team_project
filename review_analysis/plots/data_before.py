@@ -28,7 +28,7 @@ FILES = {
 
 EXPECTED_MIN_ROWS = 500  # 과제 최소조건
 
-OUTPUT_DIR = "./check_outputs"
+OUTPUT_DIR = "review_analysis/plots"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 한글 폰트 설정
