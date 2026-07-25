@@ -19,12 +19,12 @@
 - **비고**: 리뷰 내용이 비어있는 관람평(별점만 남긴 경우)은 최소조건(별점/날짜/내용 모두 포함)을 만족시키기 위해 수집에서 제외했습니다.
 
 
-### (팀원 이름 - 사이트명)
+### 네이버 영화 관람평 (박형민)
 
-- **사이트 링크**: (작성 예정)
-- **데이터 형식**: (작성 예정)
-- **수집 개수**: (작성 예정)
-- **저장 위치**: `database/reviews_(사이트명).csv`
+- **사이트 링크**: https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bkEw&pkid=68&os=35442190&qvt=0&query=%EC%99%95%EA%B3%BC%20%EC%82%AC%EB%8A%94%20%EB%82%A8%EC%9E%90%20%EA%B4%80%EB%9E%8C%ED%8F%89
+- **데이터 형식**: `rating`(별점, 5점 만점), `date`(작성일, YYYY-MM-DD 00:00:00 AM/PM), `content`(리뷰 내용)
+- **수집 개수**: 500
+- **저장 위치**: `database/reviews_naver.csv`
 
 ## 실행 방법
 
@@ -41,25 +41,25 @@ pip install beautifulsoup4 selenium pandas
 각자의 결과 CSV가 지정한 output_path에 저장됩니다.
 
 ```bash
-python main.py -o {output_path} --all
+python -m review_analysis.crawling.main -o {output_path} --all
 ```
 
 예시:
 
 ```bash
-python main.py -o database --all
+python -m review_analysis.crawling.main -o database --all
 ```
 
 ### 2. 특정 크롤러 하나만 실행
 
 ```bash
-python main.py -o {output_path} -c {크롤러 이름}
+python -m review_analysis.crawling.main -o database --crawler megabox
 ```
 
 예시 (메가박스만 실행):
 
 ```bash
-python main.py -o database -c megabox
+python -m review_analysis.crawling.main -o {output_path} --crawler {크롤러 이름}
 ```
 
 `{크롤러 이름}`에는 `review_analysis/crawling/main.py`의 `CRAWLER_CLASSES` 딕셔너리에
