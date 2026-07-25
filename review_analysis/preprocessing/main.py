@@ -3,21 +3,23 @@ import glob
 from argparse import ArgumentParser
 from typing import Dict, Type
 from review_analysis.preprocessing.base_processor import BaseDataProcessor
-from review_analysis.preprocessing.example_processor import ExampleProcessor
+from review_analysis.preprocessing.site_processor import SiteProcessor
 
 
 # 모든 preprocessing 클래스를 예시 형식으로 적어주세요. 
 # key는 "reviews_사이트이름"으로, value는 해당 처리를 위한 클래스
 PREPROCESS_CLASSES: Dict[str, Type[BaseDataProcessor]] = {
-    "reviews_example": ExampleProcessor,
+    "reviews_megabox": SiteProcessor,
+    "reviews_kinolights": SiteProcessor,
+    "reviews_naver": SiteProcessor
     # key는 크롤링한 csv파일 이름으로 적어주세요! ex. reviews_naver.csv -> reviews_naver
 }
 
-REVIEW_COLLECTIONS = glob.glob(os.path.join("..","..","database", "reviews_*.csv"))
+REVIEW_COLLECTIONS = glob.glob(os.path.join("database", "reviews_*.csv"))
 
 def create_parser() -> ArgumentParser:
     parser = ArgumentParser()
-    parser.add_argument('-o', '--output_dir', type=str, required=False, default = "../../database", help="Output file dir. Example: ../../database")
+    parser.add_argument('-o', '--output_dir', type=str, required=False, default = "database", help="Output file dir. Example: ../../database")
     parser.add_argument('-c', '--preprocessor', type=str, required=False, choices=PREPROCESS_CLASSES.keys(),
                         help=f"Which processor to use. Choices: {', '.join(PREPROCESS_CLASSES.keys())}")
     parser.add_argument('-a', '--all', action='store_true',
