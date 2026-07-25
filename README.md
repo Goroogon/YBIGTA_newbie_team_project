@@ -31,7 +31,7 @@
 ### 0. 필요한 패키지 설치
 
 ```bash
-pip install beautifulsoup4 selenium pandas
+pip install beautifulsoup4 selenium pandas requests
 ```
 
 ### 1. 전체 크롤러 한 번에 실행
