@@ -1,3 +1,56 @@
+# YBIGTA_newbie_team_project
+
+## 팀 소개
+안녕하세요 YBIGTA 신입기수 세션 6조입니다.
+
+## 팀원 자기소개
+- **권준범**: (학과, 학번, 출생년도 등 한 줄 부탁드려요!)
+- **나예린**: 도시공학과 24학번, 05년생
+- **박형민**: (학과, 학번, 출생년도 등 한 줄 부탁드려요!)
+
+## GitHub 협업 과정 (4회차)
+
+### Branch Protection Rule 적용
+_(캡처본 추가 예정)_
+<!-- ![branch protection](github/branch_protection.png) -->
+
+### Main 브랜치 Push 거부 확인
+_(캡처본 추가 예정)_
+<!-- ![push rejected](github/push_rejected.png) -->
+
+### PR + Review + Merge
+![review and merged](github/review_and_merged.png)
+
+## 과제 실행 방법
+
+### 1. Web
+FastAPI와 MVC 패턴을 기반으로 사용자 로그인 기능 구현
+
+- **index.html 꾸미기**: 다크모드 스타일링 등 시각적 요소 추가
+- **user_service.py**: 로그인, 회원가입, 삭제, 비밀번호 변경에 대한 비즈니스 로직과 예외 처리 구현
+- **user_router.py**: 아래 4개 API 엔드포인트 구현
+  - `POST /api/user/login` - 로그인
+  - `POST /api/user/register` - 회원가입
+  - `DELETE /api/user/delete` - 회원 삭제
+  - `PUT /api/user/update-password` - 비밀번호 변경
+
+### 2. 크롤링
+<왕과 사는 남자> 영화에 대해 세 개 사이트에서 리뷰 데이터 수집
+
+- **메가박스** (나예린): 별점(10점 만점), 작성일, 리뷰 내용 510개 수집, `database/reviews_megabox.csv`에 저장
+- **Kinolights** (권준범): 별점(5점 만점), 작성일, 리뷰 내용 505개 수집, `database/reviews_kinolights.csv`에 저장
+- **네이버 영화 관람평** (박형민): 별점(5점 만점), 작성일, 리뷰 내용 500개 수집, `database/reviews_naver.csv`에 저장
+- 리뷰 내용이 비어있는 관람평은 최소조건(별점/날짜/내용 모두 포함) 충족을 위해 수집에서 제외
+
+### 3. EDA·FE
+크롤링한 세 사이트의 리뷰 데이터를 대상으로 개별 분석과 사이트간 비교분석 진행
+
+- **EDA**: 별점, 텍스트 길이, 날짜의 분포와 이상치 파악
+- **데이터 전처리/FE**: 사이트별 별점·날짜 형식 통일, 결측치·이상치 제거, 텍스트 전처리 진행. 파생변수로 요일 추출, TF-IDF 평균 점수 두 가지 생성
+- **비교분석**: 감성분석, 키워드 분석, 시간에 따른 평점 변화 분석을 통해 사이트간 차이 비교
+- (팀원 작업 진행중 - 세부 그래프 및 설명 추가 예정)
+
+---
 # [3회차] 크롤링 과제 - &lt;왕과 사는 남자&gt; 리뷰 수집
 
 ## 데이터 소개
