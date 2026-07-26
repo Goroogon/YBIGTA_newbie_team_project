@@ -1,4 +1,19 @@
-﻿__pycache__/
-*.pyc
+# Python 컴파일 및 캐시 파일 제외 (mypy/pytest 관련 포함)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 개발 환경 및 OS 설정 파일 제외
+.idea/
+.vscode/
 .DS_Store
-.ipynb_checkpoints/
+Thumbs.db
+
+# 크롤링 과정에서 생성되는 웹드라이버 및 임시 로그
+chromedriver
+*.log
+
+# 가상환경 디렉토리 제외
+.venv/
+venv/
+env/
