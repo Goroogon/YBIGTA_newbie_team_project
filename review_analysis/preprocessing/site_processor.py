@@ -4,6 +4,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from kiwipiepy import Kiwi
 from review_analysis.preprocessing.base_processor import BaseDataProcessor
+from typing import Optional
 
 
 # 형태소 분석기는 초기화 비용이 있으므로 모듈 로드 시 한 번만 생성해 재사용
@@ -25,7 +26,7 @@ STOPWORDS_KO = {
 
 
 class SiteProcessor(BaseDataProcessor):
-    def __init__(self, input_path: str, output_dir: str = "database", site_name: str = None):
+    def __init__(self, input_path: str, output_dir: str = "database", site_name: Optional[str] = None):
         super().__init__(input_path, output_dir)
         # site_name을 명시하지 않으면 입력 파일명에서 자동 추출
         # 예: reviews_naver.csv -> naver (파일명 앞의 'reviews_' 접두사는 제거)

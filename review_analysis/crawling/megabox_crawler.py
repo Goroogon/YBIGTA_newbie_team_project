@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 from selenium.webdriver.common.by import By
+from typing import Optional, List, Dict, Any
 
 import pandas as pd
 import re
@@ -25,8 +26,8 @@ class MegaboxCrawler(BaseCrawler):
     def __init__(self, output_dir: str):
         super().__init__(output_dir)
         self.base_url = "https://www.megabox.co.kr/movie-detail/comment?rpstMovieNo=25104500"
-        self.driver = None
-        self.reviews_data = []
+        self.driver: Optional[webdriver.Edge] = None
+        self.reviews_data: List[Dict[str, Any]] = []
         self.logger = setup_logger("megabox_crawler.log")
 
     def start_browser(self):
@@ -52,6 +53,7 @@ class MegaboxCrawler(BaseCrawler):
         """
         if self.driver is None:
             self.start_browser()
+        assert self.driver is not None
 
         page = 1
         max_page = 300  # 안전장치: 빈 리뷰 제외 감안해 여유 있게 설정
@@ -65,7 +67,7 @@ class MegaboxCrawler(BaseCrawler):
                 break
 
             for item in review_items:
-                blank = {}
+                blank: Dict[str, Any] = {}
 
                 rating_tag = item.select_one("div.story-point span")
                 if rating_tag:
@@ -118,7 +120,7 @@ class MegaboxCrawler(BaseCrawler):
         self.logger.info(f"최종 파싱된 리뷰 수: {len(self.reviews_data)}")
         self.driver.quit()
 
-    def _parse_date(self, text: str) -> str:
+    def _parse_date(self, text: str) -> Optional[str]:
         """'1 시간전' 같은 상대 시간, 또는 '2026.07.10' 같은 절대 날짜를 모두 처리한다."""
         text = text.strip()
         now = datetime.datetime.now()

@@ -7,7 +7,7 @@ from typing import Any, Dict, List, Optional
  
 import pandas as pd
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
  
 from review_analysis.crawling.base_crawler import BaseCrawler
 from utils.logger import setup_logger
@@ -111,6 +111,8 @@ class KinolightsCrawler(BaseCrawler):
         decoder = json.JSONDecoder()
  
         for script in soup.find_all("script"):
+            if not isinstance(script, Tag):   # ← 이 두 줄 추가
+                continue
             text = script.string
             if not text or '"reviewsCount"' not in text or '"reviews"' not in text:
                 continue
