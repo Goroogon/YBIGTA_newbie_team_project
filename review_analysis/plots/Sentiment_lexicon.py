@@ -20,6 +20,8 @@
 import os
 import glob
 from collections import Counter
+from typing import Optional
+
 
 import numpy as np
 import pandas as pd
@@ -196,7 +198,7 @@ def resolve_file_list(data_paths) -> list:
 # ------------------------------------------------------------------
 # 4. 파일 1개 처리
 # ------------------------------------------------------------------
-def process_one_file(file_path: str, senti_dict: dict, plots_dir: str) -> dict:
+def process_one_file(file_path: str, senti_dict: dict, plots_dir: str) -> Optional[dict]:
     """
     파일 하나를 읽어 감성분석을 수행하고,
     - 파일명 접두어가 붙은 결과 csv / 그래프 3종을 저장
@@ -265,7 +267,7 @@ def process_one_file(file_path: str, senti_dict: dict, plots_dir: str) -> dict:
     )
     plt.close()
 
-    word_counter = Counter()
+    word_counter: Counter = Counter()
     for matched in matched_words_list:
         for word, _ in matched:
             word_counter[word] += 1

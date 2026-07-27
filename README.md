@@ -6,7 +6,7 @@
 ## 팀원 자기소개
 - **권준범**: 응용정보공학과 23학번, 04년생
 - **나예린**: 도시공학과 24학번, 05년생
-- **박형민**: (문헌정보학과, 26학번, 01년생)
+- **박형민**: 문헌정보학과, 26학번, 01년생
 
 ## GitHub 협업 과정 (4회차)
 
@@ -133,7 +133,7 @@ Selenium이 Edge, Chrome 브라우저를 직접 실행하여 크롤링 진행
 ![review_analysis/plots/missing_check_raw](review_analysis/plots/missing_check_raw.png)
 사이트 별 행 개수와 결측치
 
-![review_analysis/plots/missing_check_raw](review_analysis/plots/missing_check_raw.png)
+![review_analysis/plots/missing_check_raw](review_analysis/plots/rating_distribution_raw.png)
 사이트 별 평점 분포(이상치 탐색)
 
 
@@ -150,9 +150,9 @@ Selenium이 Edge, Chrome 브라우저를 직접 실행하여 크롤링 진행
 
 ### 키워드 분석: 사이트별 리뷰에서 자주 언급되는 키워드 및 요소 비교
 
-<img width="1200" height="750" alt="Image" src="https://github.com/user-attachments/assets/08479596-0ff7-46c0-aac3-4f02fcae5f31" />
-
 <img width="2400" height="900" alt="Image" src="https://github.com/user-attachments/assets/71324c47-bc6b-4da4-8dab-8f5cd9f4aea3" />
+
+<img width="1200" height="750" alt="Image" src="https://github.com/user-attachments/assets/08479596-0ff7-46c0-aac3-4f02fcae5f31" />
 
 **분석 방법**
 형태소 분석기 Kiwi로 리뷰 텍스트에서 명사만 추출했다. (감정어/형용사는 감정분석과 역할이 겹쳐 의도적으로 제외)
@@ -222,12 +222,12 @@ naver 리뷰는 megabox와 kinolights의 사이에 위치하고 있다. naver와
 
 **분석 방법**
 - 각 사이트의 일별 평균 평점 및 일별 리뷰 개수를 계산한 뒤, 리뷰 유입이 없는 날의 노이즈를 완화하기 위해 7일 이동평균(rolling mean)을 적용해 추이를 시각화함
-- 세 사이트(kinolights, megabox, naver)의 크롤링 시점이 서로 달라 전체 기간(2026-02-04 ~ 2026-07-25)을 기준으로 겹쳐서 비교함
+- 세 사이트(kinolights, megabox, naver)의 크롤링 시점이 서로 달라 전체 기간(2026-02-04/~2026-07-25)을 기준으로 겹쳐서 비교함
 
 **주요 발견**
 1. **naver**: 개봉 초반(2월) 평점이 5점에 가깝게 높게 형성되었다가, 시간이 지나며 꾸준히 하락해 1점대까지 떨어지는 뚜렷한 하락 추세를 보임. 동시에 리뷰 개수도 초반 하루 100개 이상 폭발적으로 몰렸다가 이후 급격히 감소함 — 개봉 직후 기대감 섞인 리뷰가 대거 유입되고, 이후 냉정한 평가로 전환된 것으로 추정됨
-2. **megabox**: 관측 기간(5-7월) 내내 평점이 4.3~4.8 사이로 안정적으로 유지됨.
-실관람객 인증 기반 리뷰 시스템의 영향으로 추정되며, 리뷰 개수도 하루 5~20개 수준으로 꾸준히 유입됨
-3. **kinolights**: 3/4점대에서 뚜렷한 추세 없이 등락을 반복함. 리뷰 개수 자체가 적어(하루 1~5개) 이동평균으로도 노이즈가 다소 남아있음
+2. **megabox**: 관측 기간(5/~7월) 내내 평점이 4.3/~4.8 사이로 안정적으로 유지됨.
+실관람객 인증 기반 리뷰 시스템의 영향으로 추정되며, 리뷰 개수도 하루 5/~20개 수준으로 꾸준히 유입됨
+3. **kinolights**: 3/~4점대에서 뚜렷한 추세 없이 등락을 반복함. 리뷰 개수 자체가 적어(하루 1/~5개) 이동평균으로도 노이즈가 다소 남아있음
 
 **시사점**: 동일 영화(&lt;왕과 사는 남자&gt;)에 대한 평가라도, 플랫폼의 리뷰 작성 방식(실관람객 인증 여부, 리뷰 유입 시점)에 따라 평점 추이 패턴이 뚜렷하게 달라짐을 확인함
