@@ -4,6 +4,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from kiwipiepy import Kiwi
 from review_analysis.preprocessing.base_processor import BaseDataProcessor
+from typing import Optional
 
 
 _kiwi = Kiwi()
@@ -19,8 +20,8 @@ STOPWORDS_KO = {
 
 
 class SiteProcessor(BaseDataProcessor):
-    def __init__(self, input_path: str = None, output_dir: str = "database",
-                 site_name: str = None, df: pd.DataFrame = None):
+  def __init__(self, input_path: str = None, output_dir: str = "database",
+               site_name: Optional[str] = None, df: pd.DataFrame = None):
         super().__init__(input_path, output_dir)
 
         if site_name:
