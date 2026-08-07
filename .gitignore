@@ -17,3 +17,6 @@ chromedriver
 .venv/
 venv/
 env/
+
+# 환경변수 파일 제외 (추가 필요)
+.env
