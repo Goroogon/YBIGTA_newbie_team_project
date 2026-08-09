@@ -1,0 +1,39 @@
+# 환경변수 (절대 이미지에 포함 금지)
+.env
+.env.*
+!.env.example
+
+# git
+.git
+.gitignore
+
+# 캐시/빌드 산물
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+
+# 가상환경
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# macOS 압축 잔재
+__MACOSX/
+
+# 문서/스크린샷 (이미지 실행에 불필요)
+README.md
+aws/
+github/
+review_analysis/plots/
+
+# 로컬 개발용 파일 (이미지 빌드/실행과 무관)
+docker-compose.yml
+insert_raw_data.py

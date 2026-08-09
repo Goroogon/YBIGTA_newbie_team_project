@@ -34,3 +34,10 @@ seaborn==0.13.2
 
 # 테스트
 pytest==8.3.4
+
+# DB (5회차: MySQL + MongoDB)
+sqlalchemy==2.0.36
+pymysql==1.1.1
+cryptography==44.0.0
+python-dotenv==1.0.1
+pymongo==4.10.1
