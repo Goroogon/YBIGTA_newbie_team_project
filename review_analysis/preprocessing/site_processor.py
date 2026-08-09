@@ -20,8 +20,8 @@ STOPWORDS_KO = {
 
 
 class SiteProcessor(BaseDataProcessor):
-  def __init__(self, input_path: str = None, output_dir: str = "database",
-               site_name: Optional[str] = None, df: pd.DataFrame = None):
+    def __init__(self, input_path: str = None, output_dir: str = "database",
+                 site_name: Optional[str] = None, df: pd.DataFrame = None):
         super().__init__(input_path, output_dir)
 
         if site_name:
