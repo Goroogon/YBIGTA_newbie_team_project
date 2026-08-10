@@ -1,7 +1,7 @@
 import pandas as pd
 from pymongo import MongoClient
 
-client = MongoClient("mongodb://localhost:27017")
+client = MongoClient("mongodb+srv://erin3548_db_user:dgvF7zAVHw71et9w@ybigta-cluster.8trep18.mongodb.net/?retryWrites=true&w=majority")
 db = client["ybigta_db"]
 
 # site_name : CSV 파일 경로

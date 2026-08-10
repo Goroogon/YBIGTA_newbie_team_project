@@ -37,5 +37,14 @@ jobs:
     steps:
       # TODO(AWS 담당자): EC2 접속 후 docker pull + 컨테이너 재실행 단계 작성
       # 필요한 secrets 예시: EC2_HOST, EC2_SSH_KEY, EC2_USER
-      - name: Placeholder
-        run: echo "AWS 담당자가 이어서 작성"
+      - name: Deploy to EC2 via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/ybigta-app:latest
+            docker stop ybigta-app || true
+            docker rm ybigta-app || true
+            docker run -d --env-file /home/ec2-user/.env -p 8000:8000 --name ybigta-app ${{ secrets.DOCKERHUB_USERNAME }}/ybigta-app:latest
