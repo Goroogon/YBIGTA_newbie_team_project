@@ -238,15 +238,18 @@ naver 리뷰는 megabox와 kinolights의 사이에 위치하고 있다. naver와
 https://hub.docker.com/r/rexkwon/ybigta-app
 
 **모든 API 실행 결과**
-![login](aws\login.png)
 
-![register](aws\register.png)
+![login](aws/login.png)
 
-![update-password](aws\update-password.png)
+![preprocess](aws/preprocess.png)
 
-![delete](aws\delete.png)
+![register](aws/register.png)
 
-![github_action](aws\github_action.png)
+![update-password](aws/update-password.png)
+
+![delete](aws/delete.png)
+
+![github_action](aws/github_action.png)
 
 **프로젝트 진행 소감**
 DB파트를 다루며 성격이 다른 두 데이터베이스를 함께 다뤄본 것이 인상 깊었습니다. MySQL은 유저 정보처럼 스키마가 명확한 데이터에, MongoDB는 크롤링 데이터처럼 구조가 자주 바뀌는 데이터에 적합하다는 걸 직접 체감할 수 있었습니다. MySQL 같은 관계형 데이터베이스는 테이블 구조와 컬럼 타입을 미리 정의해두고 데이터를 저장하는 반면, MongoDB 같은 NoSQL(문서형 데이터베이스)은 컬렉션마다 문서(document)의 형식이 고정되어 있지 않아 유연하게 데이터를 다룰 수 있습니다. 특히 MongoDB 전처리 API를 만들면서는 스키마가 고정되지 않은 만큼 필드명과 형식을 미리 약속해두지 않으면 데이터가 뒤죽박죽될 수 있다는 점도 배웠습니다.
