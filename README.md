@@ -241,6 +241,8 @@ https://hub.docker.com/r/rexkwon/ybigta-app
 
 ![login](aws/login.png)
 
+![preprocess](aws/preprocess.png)
+
 ![register](aws/register.png)
 
 ![update-password](aws/update-password.png)
