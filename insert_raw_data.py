@@ -1,7 +1,11 @@
+import os
 import pandas as pd
 from pymongo import MongoClient
+from dotenv import load_dotenv
 
-client = MongoClient("mongodb+srv://erin3548_db_user:dgvF7zAVHw71et9w@ybigta-cluster.8trep18.mongodb.net/?retryWrites=true&w=majority")
+load_dotenv()
+
+client = MongoClient(os.getenv("MONGO_URL"))
 db = client["ybigta_db"]
 
 # site_name : CSV 파일 경로
