@@ -41,8 +41,8 @@ AWS Collector (EC2, cron)
                 사용자
 ```
 
-> TODO: 위 텍스트 다이어그램을 실제 이미지(draw.io, excalidraw 등)로 만들어서
-> `aws/architecture.png`로 첨부해주세요.
+
+> ![architecture](aws/architecture.png)
 
 ---
 
@@ -72,7 +72,7 @@ CREATE TABLE reviews (
 );
 ```
 
-캡처: `aws/data_update.png` (서로 다른 시간에 데이터가 갱신된 것을 보여주는 캡처)
+![data_update](aws/data_update.png)
 
 ---
 
@@ -135,7 +135,8 @@ MySQL 3306   Source: mcp-sg
 - `mcp_user`: **read-only(SELECT)** 권한만 부여 — MCP 서버는 데이터 조회만 하면 되므로
 - collector 쪽 계정은 별도로 INSERT/UPDATE 권한을 가짐 (A 담당 EC2)
 
-캡처: `aws/rds_private.png`, `aws/security_group.png`
+![rds_private](aws/rds_private.png)
+![security_group](aws/security_group.png)
 
 ### MCP의 내부 API Port를 어떻게 보호했는가
 
@@ -191,7 +192,8 @@ MCP 서버 주소와 인증 토큰이 브라우저(Client Bundle)에 노출되�
 - `.gitignore`, `.dockerignore` 양쪽 모두에 `.env`, `*.pem`을 등록하여 Git과 Docker 이미지 양쪽에서 credential이 노출되지 않도록 했습니다.
 - Vercel 쪽 환경변수(`MCP_AUTH_TOKEN`, LLM API Key 등)는 `NEXT_PUBLIC_` 접두사를 사용하지 않고 서버 사이드 전용 환경변수로만 등록합니다. (담당: C)
 
-캡처: `aws/mcp_tools.png` (Tool 목록 조회), `aws/mcp_call.png` (실제 Tool 호출 결과)
+![mcp_tools](aws/mcp_tools.png) Tool 목록 조회
+![mcp_call](aws/mcp_call.png) 실제 Tool 호출 결과
 
 ---
 
@@ -215,7 +217,8 @@ Next.js(App Router) + Vercel로 구현했습니다. `/api/chat` Route Handler(�
 → Agent 답변: 데이터가 없는 기간을 임의로 답하지 않고 그 사실을 먼저 안내한 뒤, 실제 데이터가 있는 구간 기준으로 "평균 평점 0.14점 상승, 리뷰 건수 약 2배 증가"로 분석. naver/kinolights는 DB에 데이터가 없어 비교에서 제외한다고 명시
 ```
 
-캡처: `aws/agent_query.png`, `aws/agent_analysis.png`
+![agent_query](aws/agent_query.png)
+![agent_analysis](aws/agent_analysis.png)
 
 ---
 
