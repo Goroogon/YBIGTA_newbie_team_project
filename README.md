@@ -85,7 +85,7 @@ CREATE TABLE reviews (
 | `search_data` | 키워드/기간으로 리뷰 검색 | `keyword`, `start_date`, `end_date`, `limit` |
 | `get_latest_data` | 가장 최근에 수집된 리뷰 데이터 조회 | `site` (megabox/naver/kinolights, 생략 시 전체), `limit` (기본 10, 최대 10~100) |
 | `get_available_sites` | 조회 가능한 사이트 목록 확인 | 없음 |
-| `aggregate_data` | 리뷰 데이터 집계/통계 | `TODO: 실제 파라미터 확인 후 채우기` |
+| `aggregate_data` | 리뷰 데이터 집계/통계 (평균 평점 `avg_rating`, 리뷰 수 `review_count` 반환) | `site` (필수, megabox/naver/kinolights), `start_date` (필수, YYYY-MM-DD), `end_date` (필수, YYYY-MM-DD) |
 
 ### 왜 이러한 Tool 구조를 선택했는가
 
